@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- RWD 響應式網頁 -->
+    <title>動畫介紹 |『搖曳露營』聖地巡禮地圖</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Fonts 雲端字型 -->
+</head>
+
+<body>
+    <!-- 頂部導航列(選單) -->
+    <header id="main-header">
+        <button id="menu-btn" onclick="toggleTotalMenu(event)"> <!-- 點擊後讓選單向右展開 -->
+            <span class="btn-text">選單</span>
+            <span class="btn-arrow">➜</span>
+        </button>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="anime.html">動畫介紹</a></li> 
+                <li><a href="spots.html">巡禮景點</a></li>
+                <li><a href="food.html">美食指南</a></li>
+                <li><a href="transport.html">交通住宿</a></li>
+                <li><a href="weather.html">天氣情報</a></li>
+                <li><a href="rules.html" class="alert-link">※ 禮儀與須知</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 首頁其他內容 -->
+    <div id="page-wrapper">
+
+        <!-- 左側固定欄 -->
+        <aside id="sidebar-left">
+
+            <!-- 網站標題 -->
+            <div class="vertical-title"> <!-- 垂直排版 -->
+                <h1>
+                    <a href="index.html">
+                        <img src="tent-icon.png" alt="Logo圖示" class="title-icon">
+                        <span class="title-text">
+                            <span>ゆ</span><span>る</span><span>キ</span><span>ャ</span><span>ン</span><span>△</span> <!-- 為了讓文字分開跳動 -->
+                            <span class="spacer"></span> <!-- 空白文字 -->
+                            <span>聖</span><span>地</span><span>巡</span><span>禮</span><span>地</span><span>圖</span> <!-- 為了讓文字分開跳動 -->
+                        </span>
+                    </a>
+                </h1>
+            </div>
+            
+            <!-- 相關網站 -->
+            <div class="related-sites">
+                <a href="https://yurucamp.jp/" target="_blank" class="official-site-link"> <!-- 開啟新的分頁(官方網站) -->
+                    <img src="official-logo.png" alt="作品官方網站">
+                </a>
+            </div>
+
+            <!-- 版權宣告 -->
+            <div class="sidebar-copyright">
+                <p>&copy; 2025 YuruCamp Map<br>by Tonyyy0224.</p>
+            </div>
+        </aside>
+
+        <!-- 分頁內容區 -->
+        <section id="main-content">
+            
+            <div class="page-header-banner">
+                <img src="anime-banner.gif" alt="動畫介紹橫幅" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px;">
+                <div style="margin-top: 20px;">
+                    <h2>動畫介紹</h2>
+                </div>
+            </div>
+
+            <article class="content-body">
+                
+                <!-- 作品介紹 -->
+                <section class="anime-section">
+                    <h3>⛺ 故事簡介</h3>
+                    <p>喜歡在淡季進行單人露營的女高中生「志摩凜」，在一次於本栖湖的露營中，遇見為了看富士山而騎腳踏車來到這裡的「各務原撫子」。</p>
+                    <p>從兩人的相遇到野活組成立。本作透過輕鬆療癒的步調，描繪了少女們在山梨、靜岡、長野與愛知等地的露營生活，以及被美食與景色療癒的時刻。</p><br>
+                    
+                    <div class="series-list">
+                        <h4>📚 全系列作品一覽</h4>
+                        <table>
+                            <tr>
+                                <th>漫畫(原作)</th>
+                                <td>由日本漫畫家 あfろ 創作，以山梨縣以及富士山周邊一帶作舞台，描述露營中的知識、野炊等戶外活動，2015年開始連載至今。台灣由東立出版社代理發行。</td>
+                            </tr>
+                            <tr>
+                                <th>動畫 Season1</th>
+                                <td>2018年1月播出。由 C-Station 製作。凜與撫子在本栖湖相遇，由此開始的戶外系 Girls Story。</td>
+                            </tr>
+                            <tr>
+                                <th>動畫 房間露營△ (番外篇)</th>
+                                <td>2020年1月播出。每集約3分鐘的短篇動畫，主要描寫野活組的有趣日常。</td>
+                            </tr>
+                            <tr>
+                                <th>動畫 Season2</th>
+                                <td>2021年1月播出。同為 C-Station 製作。劇情繼續深入，描寫了新年露營以及前往伊豆的團體旅行。</td>
+                            </tr>
+                            <tr>
+                                <th>電影版 搖曳露營△</th>
+                                <td>2022年7月上映。原創劇情，長大的五人重新集結，親手打造露營場的故事。</td>
+                            </tr>
+                            <tr>
+                                <th>動畫 Season3</th>
+                                <td>2024年4月播出。改為 8bit 製作，繼續在山梨和靜岡等地享受各自的戶外活動。</td>
+                            </tr>
+                            <tr>
+                                <th>真人電視劇</th>
+                                <td>2020年播出。因高度還原原作場景、美食與露營器材而廣受好評。</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+
+                <hr class="divider">
+
+                <!-- 角色介紹 -->
+                <section class="anime-section">
+                    <h3>👥 野外活動社與其他夥伴</h3>
+                    
+                    <div class="character-grid">
+                        
+                        <div class="char-card">
+                            <div class="char-img">
+                                <img src="nadeshiko.jpg" alt="各務原撫子">
+                            </div>
+                            <div class="char-info">
+                                <h4>各務原 撫子 <span class="jp-name">(Kagamihara Nadeshiko)</span></h4>
+                                <p class="tag">#吃貨 #體能怪物 #野活組</p>
+                                <p>從靜岡搬到山梨的高中生。<br>性格天真，擁有無底洞般的胃口，因為遇見凜而踏入露營的世界。</p>
+                            </div>
+                        </div>
+
+                        <div class="char-card">
+                            <div class="char-img">
+                                <img src="rin.jpg" alt="志摩凜">
+                            </div>
+                            <div class="char-info">
+                                <h4>志摩 凜 <span class="jp-name">(Shima Rin)</span></h4>
+                                <p class="tag">#單人露營 #機車 #圖書委員</p>
+                                <p>熱愛淡季單人露營的實力派。<br>喜歡獨處，但在認識撫子後，逐漸體會到與朋友一同露營的樂趣。</p>
+                            </div>
+                        </div>
+
+                        <div class="char-card">
+                            <div class="char-img">
+                                <img src="chiaki.jpg" alt="大垣千明">
+                            </div>
+                            <div class="char-info">
+                                <h4>大垣 千明 <span class="jp-name">(Ogaki Chiaki)</span></h4>
+                                <p class="tag">#社長 #平價露營 #野活組</p>
+                                <p>野外活動社的社長。<br>性格豪爽，經常會有各種鬼點子，是團隊中的氣氛製造者。</p>
+                            </div>
+                        </div>
+
+                        <div class="char-card">
+                            <div class="char-img">
+                                <img src="aoi.jpg" alt="犬山葵">
+                            </div>
+                            <div class="char-info">
+                                <h4>犬山 葵 <span class="jp-name">(Inuyama Aoi)</span></h4>
+                                <p class="tag">#關西腔 #吹牛 #野活組</p>
+                                <p>千明的好友。<br>性格穩重，但偶爾會一本正經地說謊來捉弄撫子，說話帶有關西口音。</p>
+                            </div>
+                        </div>
+
+                         <div class="char-card">
+                            <div class="char-img">
+                                <img src="ena.jpg" alt="齊藤惠那">
+                            </div>
+                            <div class="char-info">
+                                <h4>齊藤 惠那 <span class="jp-name">(Saito Ena)</span></h4>
+                                <p class="tag">#吉娃娃 #富婆 #回家社</p>
+                                <p>凜的朋友、回家社社員。<br>養了一隻叫做「竹輪」的吉娃娃，會給自己和竹輪買非常昂貴的裝備。</p>
+                            </div>
+                        </div>
+
+                        <div class="char-card">
+                            <div class="char-img">
+                                <img src="ayano.jpg" alt="土岐綾乃">
+                            </div>
+                            <div class="char-info">
+                                <h4>土岐 綾乃 <span class="jp-name">(Toki Ayano)</span></h4>
+                                <p class="tag">#青梅竹馬 #機車</p>
+                                <p>撫子住在濱松的兒時玩伴。<br>性格有些慵懶，和凜一樣喜歡騎摩托車，兩人意外地很合。</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <blockquote>
+                    <p>「歡迎來到野外活動社！」</p>
+                </blockquote>
+
+            </article>
+            
+            <div style="height: 100px;"></div>
+
+        </section>
+
+    </div>
+
+    <script> // by ChatGPT + Gemini
+
+        // 選單互動邏輯
+        function toggleTotalMenu(e) { // 點擊後讓選單向右展開
+            e.stopPropagation(); 
+            document.getElementById("main-nav").classList.toggle("show");
+        }
+
+        document.addEventListener('click', function(e) {
+            var nav = document.getElementById("main-nav");
+            var btn = document.getElementById("menu-btn");
+            if (nav.classList.contains('show') && !nav.contains(e.target) && !btn.contains(e.target)) {
+                nav.classList.remove("show");
+            }
+        });
+    </script>
+</body>
+</html>
