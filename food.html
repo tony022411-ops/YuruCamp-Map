@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- RWD 響應式網頁 -->
+    <title>美食指南 |『搖曳露營』聖地巡禮地圖</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Fonts 雲端字型 -->
+</head>
+
+<body>
+    <!-- 頂部導航列(選單) -->
+    <header id="main-header">
+        <button id="menu-btn" onclick="toggleTotalMenu(event)"> <!-- 點擊後讓選單向右展開 -->
+            <span class="btn-text">選單</span>
+            <span class="btn-arrow">➜</span>
+        </button>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="anime.html">動畫介紹</a></li> 
+                <li><a href="spots.html">巡禮景點</a></li>
+                <li><a href="food.html">美食指南</a></li>
+                <li><a href="transport.html">交通住宿</a></li>
+                <li><a href="weather.html">天氣情報</a></li>
+                <li><a href="rules.html" class="alert-link">※ 禮儀與須知</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 首頁其他內容 -->
+    <div id="page-wrapper">
+
+        <!-- 左側固定欄 -->
+        <aside id="sidebar-left">
+
+            <!-- 網站標題 -->
+            <div class="vertical-title"> <!-- 垂直排版 -->
+                <h1>
+                    <a href="index.html">
+                        <img src="tent-icon.png" alt="Logo圖示" class="title-icon">
+                        <span class="title-text">
+                            <span>ゆ</span><span>る</span><span>キ</span><span>ャ</span><span>ン</span><span>△</span> <!-- 為了讓文字分開跳動 -->
+                            <span class="spacer"></span> <!-- 空白文字 -->
+                            <span>聖</span><span>地</span><span>巡</span><span>禮</span><span>地</span><span>圖</span> <!-- 為了讓文字分開跳動 -->
+                        </span>
+                    </a>
+                </h1>
+            </div>
+            
+            <!-- 相關網站 -->
+            <div class="related-sites">
+                <a href="https://yurucamp.jp/" target="_blank" class="official-site-link"> <!-- 開啟新的分頁(官方網站) -->
+                    <img src="official-logo.png" alt="作品官方網站">
+                </a>
+            </div>
+
+            <!-- 版權宣告 -->
+            <div class="sidebar-copyright">
+                <p>&copy; 2025 YuruCamp Map<br>by Tonyyy0224.</p>
+            </div>
+        </aside>
+
+        <!-- 分頁內容區 -->
+        <section id="main-content">
+            
+            <div class="page-header-banner">
+                <img src="food-banner.gif" alt="美食橫幅" style="width: 100%; height: 400px; object-fit: cover; border-radius: 12px;">
+                <div style="margin-top: 20px;">
+                    <h2>美食指南</h2>
+                    <p style="color: #666;">還原動畫中的經典美味！從簡單泡麵到豪華大餐。</p>
+                </div>
+            </div>
+
+            <article class="content-body">
+
+                <!-- 美食介紹 -->
+                <div class="food-card">
+                    <div class="food-img">
+                        <img src="curry.jpg" alt="咖哩泡麵">
+                    </div>
+                    <div class="food-info">
+                        <h3>🍜 咖哩泡麵</h3>
+                        <p class="episode-tag">登場：S1 第1話</p>
+                        <p>一切的起點，凜分給飢腸轆轆的撫子的一碗泡麵。<br>雖然只是普通的日清咖哩杯麵，但在寒冷的本栖湖畔，這就是世界上最美味的食物。</p>
+                        <div class="recipe-box">
+                            <strong>🛒 準備食材：</strong>
+                            <ul>
+                                <li>日清咖哩口味杯麵</li>
+                                <li>熱水(建議自備爐具或保溫瓶)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card reverse">
+                    <div class="food-img">
+                        <img src="gyoza.jpg" alt="擔擔餃子鍋">
+                    </div>
+                    <div class="food-info">
+                        <h3>🥟 擔擔餃子鍋</h3>
+                        <p class="episode-tag">登場：S1 第3話</p>
+                        <p>撫子在富士山麓露營場做給凜吃的料理。<br>使用市售的冷凍餃子和擔擔鍋湯底，簡單又溫暖，微辣的口味非常適合在冬天享用。</p>
+                        <div class="recipe-box">
+                            <strong>🛒 準備食材：</strong>
+                            <ul>
+                                <li>冷凍餃子</li>
+                                <li>豆腐、蔬菜(蔥、白菜、韭菜、豆芽菜、香菇)</li>
+                                <li>擔擔鍋湯底(雞高湯、辣椒醬)</li>
+                                <li>瓦斯爐/鍋具</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-img">
+                        <img src="pasta.jpg" alt="義大利湯麵">
+                    </div>
+                    <div class="food-info">
+                        <h3>🍝 義大利湯麵</h3>
+                        <p class="episode-tag">登場：S1 第5話</p>
+                        <p>凜在單人露營時做的獨享料理。將義大利麵折斷放入濃湯中煮，最後撒上滿滿的起司與黑胡椒，是懶人的極致美味。</p>
+                        <div class="recipe-box">
+                            <strong>🛒 準備食材：</strong>
+                            <ul>
+                                <li>義大利麵</li>
+                                <li>培根、蔬菜(蒜頭、洋蔥、蘆筍、鴻喜菇)、橄欖油</li>
+                                <li>濃湯湯底(水、牛奶、濃湯塊、起司、黑胡椒)</li>
+                                <li>瓦斯爐/鍋具</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card reverse">
+                    <div class="food-img">
+                        <img src="manju.jpg" alt="身延饅頭">
+                    </div>
+                    <div class="food-info">
+                        <h3>🍘 身延饅頭</h3>
+                        <p class="episode-tag">登場：S1 第8話</p>
+                        <p>身延車站前的老字號「榮昇堂」。甜而不膩的内餡與鬆軟的外皮，價格親民。撫子曾創下在此一口氣狂吃十個的紀錄。</p>
+                        <div class="recipe-box">
+                            <strong>🛒 購買資訊：</strong>
+                            <ul>
+                                <li>地點：身延站前商店街</li>
+                                <li>推薦搭配：熱茶或冰茶</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="pending-section" style="background-color: #f9f9f9; padding: 30px; border-radius: 12px; color: #777; margin-top: 40px;">
+                    <h3 style="margin-top: 0; color: #999;">更多美食待整理...</h3>
+                    <ul style="line-height: 1.8;">
+                        <li>S1 EP.7 - 烤肉、鱈魚燉鍋</li>
+                        <li>S1 EP.9 - 迷你醬汁豬排飯</li>
+                        <li>S1 EP.11 - S'more(烤棉花糖夾心餅乾)</li>
+                        <li>S1 EP.11 - 蕃茄壽喜燒</li>
+                        <li>S2 EP.2 - 抹茶提拉米蘇 & 綠茶套餐</li>
+                        <li>S2 EP.3 - 濱名湖特上鰻魚飯</li>
+                        <li>S2 EP.7 - 五味時雨燒</li>
+                        <li>S2 EP.10 - 紅金眼鯛漢堡</li>
+                        <li>S2 EP.11 - 土鍋蒜味蝦</li>
+                        <li>S2 EP.11 - 紅金眼鯛湯意大利麵</li>
+                        <li>S2 EP.12 - 海鮮澆湯蓋飯</li>
+                        <li>⋯⋯</li>
+                    </ul>
+                </section>
+
+                <div style="height: 50px;"></div>
+
+                <blockquote>
+                    <p>👨‍🍳 <strong>小提醒：</strong>在高海拔時水的沸點較低（約96-98度），煮義大利麵時建議多煮一分鐘，才不會吃到硬硬的麵芯喔！</p>
+                </blockquote>
+
+            </article>
+            
+            <div style="height: 100px;"></div>
+        </section>
+    </div>
+
+    <script> // by ChatGPT + Gemini
+
+        // 選單互動邏輯
+        function toggleTotalMenu(e) { // 點擊後讓選單向右展開
+            e.stopPropagation(); 
+            document.getElementById("main-nav").classList.toggle("show");
+        }
+
+        document.addEventListener('click', function(e) {
+            var nav = document.getElementById("main-nav");
+            var btn = document.getElementById("menu-btn");
+            if (nav.classList.contains('show') && !nav.contains(e.target) && !btn.contains(e.target)) {
+                nav.classList.remove("show");
+            }
+        });
+    </script>
+</body>
+</html>
