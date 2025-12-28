@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- RWD 響應式網頁 -->
+    <title>禮儀與須知 |『搖曳露營』聖地巡禮地圖</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Fonts 雲端字型 -->
+</head>
+
+<body>
+    <!-- 頂部導航列(選單) -->
+    <header id="main-header">
+        <button id="menu-btn" onclick="toggleTotalMenu(event)"> <!-- 點擊後讓選單向右展開 -->
+            <span class="btn-text">選單</span>
+            <span class="btn-arrow">➜</span>
+        </button>
+    
+        <nav id="main-nav">
+            <ul>
+                <li><a href="anime.html">動畫介紹</a></li> 
+                <li><a href="spots.html">巡禮景點</a></li>
+                <li><a href="food.html">美食指南</a></li>
+                <li><a href="transport.html">交通住宿</a></li>
+                <li><a href="weather.html">天氣情報</a></li>
+                <li><a href="rules.html" class="alert-link">※ 禮儀與須知</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 首頁其他內容 -->
+    <div id="page-wrapper">
+
+        <!-- 左側固定欄 -->
+        <aside id="sidebar-left">
+
+            <!-- 網站標題 -->
+            <div class="vertical-title"> <!-- 垂直排版 -->
+                <h1>
+                    <a href="index.html">
+                        <img src="tent-icon.png" alt="Logo圖示" class="title-icon">
+                        <span class="title-text">
+                            <span>ゆ</span><span>る</span><span>キ</span><span>ャ</span><span>ン</span><span>△</span> <!-- 為了讓文字分開跳動 -->
+                            <span class="spacer"></span> <!-- 空白文字 -->
+                            <span>聖</span><span>地</span><span>巡</span><span>禮</span><span>地</span><span>圖</span> <!-- 為了讓文字分開跳動 -->
+                        </span>
+                    </a>
+                </h1>
+            </div>
+            
+            <!-- 相關網站 -->
+            <div class="related-sites">
+                <a href="https://yurucamp.jp/" target="_blank" class="official-site-link"> <!-- 開啟新的分頁(官方網站) -->
+                    <img src="official-logo.png" alt="作品官方網站">
+                </a>
+            </div>
+
+            <!-- 版權宣告 -->
+            <div class="sidebar-copyright">
+                <p>&copy; 2025 YuruCamp Map<br>by Tonyyy0224.</p>
+            </div>
+        </aside>
+
+        <!-- 分頁內容區 -->
+        <section id="main-content">
+
+            <div class="page-header-banner">
+                <img src="rules-banner.gif" alt="須知橫幅" style="width: 100%; height: 400px; object-fit: cover; border-radius: 12px;">
+                <div style="margin-top: 20px;">
+                    <h2>禮儀與須知</h2>
+                    <p style="color: #666;">為了讓美景能永遠保留，請務必遵守以下規則。</p>
+                </div>
+            </div>
+
+            <!-- 禁止事項 -->
+            <article class="content-body">
+                <h3>🚫 禁止事項</h3>
+                
+                <div class="rule-block">
+                    <h4>1. 請勿擅自闖入私有地</h4>
+                    <p>動畫中出現的學校、商店街周邊，很多都是當地居民的實際生活區域，請勿未經許可進入，或長時間逗留、大聲喧嘩。</p>
+                </div>
+
+                <div class="rule-block">
+                    <h4>2. 露營場禮儀</h4>
+                    <p>大部分的露營場在22:00~7:00會實施「安靜時間(Quiet Time)」。請降低說話音量、關閉過亮的燈光，以免影響他人休息。</p>
+                </div>
+
+                <div class="rule-block">
+                    <h4>3. 垃圾不落地</h4>
+                    <p>「比來的時候更乾淨」，這是露營的基本原則。請將垃圾自行帶走或依分類丟棄。絕對禁止將垃圾遺留在營位上。</p>
+                </div>
+
+                 <div class="rule-block">
+                    <h4>4. 關於生火</h4>
+                    <p>嚴禁在地面直接生火(直火)，請務必使用焚火台。使用後的炭灰請確實熄滅，並丟入指定的收集處，不可埋入土中。</p>
+                </div>
+
+                <!-- 攝影禮儀 -->
+                <div class="divider"></div>
+
+                <h3>📸 攝影禮儀</h3>
+                <ul>
+                    <li><strong>尊重隱私：</strong> 拍攝時請避開其他遊客的臉孔。若想拍攝他人帳篷或裝備，請務必先徵求車主/物品主人的同意。</li>
+                    <li><strong>空拍機限制：</strong> 使用無人機空拍通常需要事先申請，大多數日本露營場是「全面禁止」無人機的。</li>
+                    <li><strong>自然環境：</strong> 請勿為了取景而踩踏花草、攀折樹木或破壞自然環境。</li>
+                </ul>
+
+                <blockquote style="margin-top: 40px;">
+                    <p>🌟 除了照片什麼都不帶走，除了足跡什麼都不留下，願這片曾感動你的風景，能以同樣的姿態迎接下一位旅人。</p>
+                </blockquote>
+            </article>
+
+            <div style="height: 100px;"></div>
+
+        </section>
+    </div>
+
+    <script> // by ChatGPT + Gemini
+
+        // 選單互動邏輯
+        function toggleTotalMenu(e) { // 點擊後讓選單向右展開
+            e.stopPropagation(); 
+            document.getElementById("main-nav").classList.toggle("show");
+        }
+
+        document.addEventListener('click', function(e) {
+            var nav = document.getElementById("main-nav");
+            var btn = document.getElementById("menu-btn");
+            if (nav.classList.contains('show') && !nav.contains(e.target) && !btn.contains(e.target)) {
+                nav.classList.remove("show");
+            }
+        });
+    </script>
+</body>
+</html>
