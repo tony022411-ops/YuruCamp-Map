@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- RWD 響應式網頁 -->
+    <title>交通住宿 |『搖曳露營』聖地巡禮地圖</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Fonts 雲端字型 -->
+</head>
+
+<body>
+    <!-- 頂部導航列(選單) -->
+    <header id="main-header">
+        <button id="menu-btn" onclick="toggleTotalMenu(event)"> <!-- 點擊後讓選單向右展開 -->
+            <span class="btn-text">選單</span>
+            <span class="btn-arrow">➜</span>
+        </button>
+    
+        <nav id="main-nav">
+            <ul>
+                <li><a href="anime.html">動畫介紹</a></li> 
+                <li><a href="spots.html">巡禮景點</a></li>
+                <li><a href="food.html">美食指南</a></li>
+                <li><a href="transport.html">交通住宿</a></li>
+                <li><a href="weather.html">天氣情報</a></li>
+                <li><a href="rules.html" class="alert-link">※ 禮儀與須知</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 首頁其他內容 -->
+    <div id="page-wrapper">
+
+        <!-- 左側固定欄 -->
+        <aside id="sidebar-left">
+
+            <!-- 網站標題 -->
+            <div class="vertical-title"> <!-- 垂直排版 -->
+                <h1>
+                    <a href="index.html">
+                        <img src="tent-icon.png" alt="Logo圖示" class="title-icon">
+                        <span class="title-text">
+                            <span>ゆ</span><span>る</span><span>キ</span><span>ャ</span><span>ン</span><span>△</span> <!-- 為了讓文字分開跳動 -->
+                            <span class="spacer"></span> <!-- 空白文字 -->
+                            <span>聖</span><span>地</span><span>巡</span><span>禮</span><span>地</span><span>圖</span> <!-- 為了讓文字分開跳動 -->
+                        </span>
+                    </a>
+                </h1>
+            </div>
+            
+            <!-- 相關網站 -->
+            <div class="related-sites">
+                <a href="https://yurucamp.jp/" target="_blank" class="official-site-link"> <!-- 開啟新的分頁(官方網站) -->
+                    <img src="official-logo.png" alt="作品官方網站">
+                </a>
+            </div>
+
+            <!-- 版權宣告 -->
+            <div class="sidebar-copyright">
+                <p>&copy; 2025 YuruCamp Map<br>by Tonyyy0224.</p>
+            </div>
+        </aside>
+
+        <!-- 分頁內容區 -->
+        <section id="main-content">
+            
+            <div class="page-header-banner">
+                <img src="transport-banner.gif" alt="交通橫幅" style="width: 100%; height: 400px; object-fit: cover; border-radius: 12px;">
+                <div style="margin-top: 20px;">
+                    <h2>交通住宿</h2>
+                    <p style="color: #666;">收錄大眾運輸與自駕攻略，以及必訪的露營場與溫泉旅館。</p>
+                </div>
+            </div>
+
+            <!-- 外部交通 -->
+            <article class="content-body">
+                
+                <h3>🚅 外部交通(AI資料僅供參考)</h3>
+                <p>熱門巡禮地主要分為「山梨縣 (富士五湖/身延)」與「靜岡縣 (朝霧高原/濱名湖/伊豆)」。</p>               
+
+                <table class="common-table">
+                    <tr>
+                        <th width="15%">出發地</th>
+                        <th width="20%">目的地</th>
+                        <th>推薦交通方式</th>
+                        <th width="15%">預估時間</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="4"><strong>東京</strong><br><span style="font-size:0.8rem; color:#888;">(新宿/東京)</span></td>
+                        <td><strong>河口湖</strong><br><span style="font-size:0.8rem; color:#888;">(山梨)</span></td>
+                        <td>
+                            <span class="badge bus">高速巴士</span> Busta新宿 - 單程約 ¥2,200 <br>
+                            <span class="badge train">電車</span> JR中央線 特急「富士回遊」- 單程約 ¥4,130
+                        </td>
+                        <td>約 2 小時</td>
+                    </tr>
+                    <tr>
+                        <td><strong>身延</strong><br><span style="font-size:0.8rem; color:#888;">(山梨)</span></td>
+                        <td>
+                            <span class="badge train">電車</span> JR中央線 特急「Azusa」➜ 甲府轉車<br>➜ JR身延線 特急「富士川」- 單程約 ¥6,800
+                        </td>
+                        <td>約 3 小時</td>
+                    </tr>
+                    <tr>
+                        <td><strong>濱松</strong><br><span style="font-size:0.8rem; color:#888;">(靜岡/濱名湖)</span></td>
+                        <td>
+                            <span class="badge train">新幹線</span> JR東海道新幹線「Hikari」- 單程約 ¥8,500<br>
+                            <span style="font-size:0.85rem; color:#666;">※ 可轉乘 JR東海道本線 至弁天島</span>
+                        </td>
+                        <td>約 1.5 小時</td>
+                    </tr>
+                    <tr>
+                        <td><strong>伊豆</strong><br><span style="font-size:0.8rem; color:#888;">(伊豆高原/下田)</span></td>
+                        <td>
+                            <span class="badge train">電車</span> JR東海道線 特急「Odoriko」- 單程約 ¥6,200<br>
+                            <span style="font-size:0.85rem; color:#666;">※ 可前往大室山、仙人掌公園</span>
+                        </td>
+                        <td>約 2.5 小時</td>
+                    </tr>
+                </table>
+
+                <!-- 當地交通 -->
+                <div class="divider"></div>
+                
+                <h3>🚗 當地交通</h3>
+                <p>山區範圍廣大，根據旅行風格與人數，可選擇以下兩種方式：</p>
+
+                <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+                    <div style="flex: 1; min-width: 280px; background: #fff9f0; padding: 25px; border-radius: 16px; border-left: 5px solid var(--theme-orange);">
+                        <h4 style="color: var(--theme-orange-dark); margin-top: 0;">🚙 租車自駕 (最推薦)</h4>
+                        <p style="font-size: 0.95rem; line-height: 1.6;">
+                            最自由的方式！可以直接把露營裝備塞進後車廂，也能輕鬆前往大眾運輸難以到達的「浩庵露營場」或「高ボッチ高原」。
+                        </p>
+                        <ul style="font-size: 0.9rem; color: #666; padding-left: 20px;">
+                            <li><strong>優點：</strong> 行程彈性、不用扛行李、可跑多個地點。</li>
+                            <li><strong>注意：</strong> <span style="color:#e74c3c;">冬季 (12-2月) 山區路面會結冰，務必租借雪胎。</span></li>
+                        </ul>
+                    </div>
+
+                    <div style="flex: 1; min-width: 280px; background: #f0f9ff; padding: 25px; border-radius: 16px; border-left: 5px solid var(--theme-blue);">
+                        <h4 style="color: var(--theme-blue); margin-top: 0;">🚃 電車 + 巴士 (輕裝/學生)</h4>
+                        <p style="font-size: 0.95rem; line-height: 1.6;">
+                            適合單純聖地巡禮的遊客。身延線沿途風景優美，而且有機會遇到動畫聯名的彩繪列車！
+                        </p>
+                        <ul style="font-size: 0.9rem; color: #666; padding-left: 20px;">
+                            <li><strong>必訪車站：</strong> 甲斐常葉站(本栖高校)、身延站。</li>
+                            <li><strong>注意：</strong> 身延線班次稀少 (約1小時1班)，且部分無人車站無法使用 Suica/IC卡，需準備現金。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 機車巡禮 -->
+                <div class="divider"></div>
+
+                <h3>🛵 特別企劃：機車巡禮</h3>
+                <p>
+                    想體驗志摩凜的騎乘視角嗎？在「河口湖站」周邊有提供機車租賃服務，您可以租一台類似 Vino 的機車，享受微風吹拂的感覺。
+                </p>
+                <figure class="content-image">
+                    <img src="scooter.jpg" alt="機車露營示意圖">
+                    <figcaption>▲ 騎車環繞富士五湖 (示意圖)</figcaption>
+                </figure>
+
+                <!-- 詳細攻略 -->
+                <div class="divider"></div>
+
+                <h3>📍 詳細直達攻略(AI資料僅供參考)</h3>
+                <p>這裡整理了動畫中各大露營場與景點的交通方式。</p>
+
+                <h4 style="margin-top: 30px; color: var(--theme-blue);">🗻 山梨縣 (富士五湖、身延)</h4>
+                
+                <details>
+                    <summary>浩庵露營場 (本栖湖)</summary>
+                    <div class="details-content">
+                        <p><strong>動畫登場：</strong>S1 第1話 (撫子睡覺的廁所、管理棟)</p>
+                        <ul>
+                            <li><span class="transport-tag bus">巴士</span> <strong>河口湖站</strong> 搭乘「鳴澤・精進湖・本栖湖周遊巴士 (藍線)」，於「浩庵莊前」下車，步行 1 分鐘。</li>
+                            <li><span class="transport-tag car">開車</span> 導航設定「浩庵キャンプ場」。注意：進入露營場的下坡路段非常狹窄，會車困難。</li>
+                            <li><strong>💡 攻略：</strong> 巴士班次不多 (約 2 小時一班)，錯過要等很久。如果不露營只拍照，建議停留 1 小時後搭下一班車離開。</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>本栖高校 (舊下部小學校)</summary>
+                    <div class="details-content">
+                        <p><strong>動畫登場：</strong>主角們就讀的學校原型</p>
+                        <ul>
+                            <li><span class="transport-tag walk">步行</span> 從 JR身延線「甲斐常葉站」下車，沿著坡道步行約 15-20 分鐘。</li>
+                            <li><strong>⚠️ 注意：</strong> 沿路坡度非常陡。學校目前已廢校，偶爾會舉辦參觀活動，平時請勿擅自進入校園內部，僅在校門口拍照。</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>身延站前商店街 (榮昇堂)</summary>
+                    <div class="details-content">
+                        <p><strong>動畫登場：</strong>S1 第8話 (買身延饅頭)</p>
+                        <ul>
+                            <li><span class="transport-tag walk">步行</span> JR身延線「身延站」出站即達。</li>
+                            <li><strong>💡 攻略：</strong> 榮昇堂就在商店街入口，買完饅頭可以像野活組一樣坐在對面的河堤長椅上吃。</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <h4 style="margin-top: 30px; color: var(--theme-orange-dark);">🌊 靜岡縣 (伊豆、濱名湖)</h4>
+
+                <details>
+                    <summary>Fumotoppara 麓露營場 (朝霧高原)</summary>
+                    <div class="details-content">
+                        <p><strong>動畫登場：</strong>S1 第2-3話 (鑽石富士)</p>
+                        <ul>
+                            <li><span class="transport-tag bus">巴士</span> 從「河口湖站」或「新富士站」搭乘「快速巴士 (往富士宮/富士山站)」，於「朝霧Green Park (朝霧グリーンパーク)」下車。</li>
+                            <li><span class="transport-tag walk">步行</span> 下車後還需步行約 20-30 分鐘才能抵達營地入口 (路途遙遠)。</li>
+                            <li><strong>💡 建議：</strong> 強烈建議租車前往。如果搭巴士，請務必計算好回程時間，末班車很早。</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>濱名湖・弁天島</summary>
+                    <div class="details-content">
+                        <p><strong>動畫登場：</strong>S2 第3話 (海上鳥居日落)</p>
+                        <ul>
+                            <li><span class="transport-tag walk">步行</span> JR東海道本線「弁天島站」下車，步行 5 分鐘即達海濱公園。</li>
+                            <li><strong>💡 攻略：</strong> 冬季風非常大！凜就是在這裡被吹得受不了才去躲在溫泉旅館後面。</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <h4 style="margin-top: 30px; color: var(--theme-green);">⛰️ 長野縣</h4>
+
+                <details>
+                    <summary>高布其高原 (高ボッチ高原)</summary>
+                    <div class="details-content">
+                        <p><strong>動畫登場：</strong>S1 第5話 (凜的單人夜景)</p>
+                        <ul>
+                            <li><span class="transport-tag car">開車</span> <strong>唯一交通方式</strong>。大眾運輸無法到達。</li>
+                            <li><strong>⚠️ 極度危險：</strong> 山路極為狹窄 (僅一車寬)，且冬季 (12月-4月) 道路會「完全封閉」，車輛禁止進入。聖地巡禮請務必選在春夏秋季。</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <div class="divider"></div>
+
+                <!-- 住宿與溫泉 -->
+                <h3>⛺ 住宿與溫泉</h3>
+                
+                <h4 style="color: var(--theme-blue);">【絕景溫泉】</h4>
+                <p>寒冷的天氣最重要的就是泡湯！以下是動畫中野活組去過的名湯：</p>
+                <ul>
+                    <li><strong>ほったらかし温泉：</strong> S1第4話。以「邊泡湯邊看富士山日出」聞名，泡完後一定要吃這裡的「炸溫泉蛋 (温玉あげ)」。</li>
+                    <li><strong>みたまの湯 (見晴之湯)：</strong> 同S1第4話。 以「日本頂級夜景溫泉」聞名，入夜後可一覽甲府市燈火。</li>
+                    <li><strong>⋯⋯</li>
+                </ul>
+
+                <h4 style="color: var(--theme-green);">【住宿推薦】</h4>
+                <ul>
+                    <li><strong>身延・下部溫泉區：</strong> 撫子姊姊帶大家去泡湯的地方。這裡有許多歷史悠久的溫泉旅館，距離「甲斐常葉站」只有一站距離。</li>
+                    <li><strong>山中湖・富士山飯店：</strong> 如果不露營，住在這裡可以從房間直接看到巨大的富士山。早晨有機會看到「逆富士」絕景。</li>
+                    <li><strong>甲府站周邊飯店：</strong> 交通最方便的中繼站，車站附近有許多平價商務旅館，晚上還能去參觀撫子打工的蕎麥麵店。</li>
+                    <li><strong>⋯⋯</li>
+                </ul>
+
+                <blockquote>
+                    <p>💡 若搭乘大眾運輸務必購買『富士山・富士五湖周遊券』。一張票即可解決前往露營場、溫泉與車站的所有交通轉乘。</p>
+                </blockquote>
+
+            </article>
+            
+            <div style="height: 100px;"></div>
+
+        </section>
+
+    </div>
+
+    <script> // by ChatGPT + Gemini
+
+        // 選單互動邏輯
+        function toggleTotalMenu(e) { // 點擊後讓選單向右展開
+            e.stopPropagation(); 
+            document.getElementById("main-nav").classList.toggle("show");
+        }
+
+        document.addEventListener('click', function(e) {
+            var nav = document.getElementById("main-nav");
+            var btn = document.getElementById("menu-btn");
+            if (nav.classList.contains('show') && !nav.contains(e.target) && !btn.contains(e.target)) {
+                nav.classList.remove("show");
+            }
+        });
+    </script>
+</body>
+</html>
