@@ -1,5 +1,5 @@
 /* ========================================= */
-/* 1. 變數與基礎設定 (Variables & Reset)      */
+/* 1. 變數與基礎設定 (Variables & Reset)     */
 /* ========================================= */
 :root {
     /* --- 主題色 --- */
@@ -29,7 +29,7 @@
 body {
     font-family: 'GenJyuuGothic', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
     margin: 0;
-    padding-top: 60px; /* Header 高度 */
+    padding-top: 60px;
     background-color: var(--bg-cream);
     color: var(--text-dark);
     background-image: radial-gradient(var(--text-light) 0.5px, transparent 0.5px);
@@ -291,7 +291,7 @@ a:hover { color: var(--theme-orange); }
 
 
 /* ========================================= */
-/* 4. 內頁通用 (Inner Pages: General)        */
+/* 4. 內頁通用 (Inner Pages)                 */
 /* ========================================= */
 .page-header-banner {
     text-align: center; padding: 80px 20px 60px; color: var(--text-dark);
@@ -304,7 +304,6 @@ a:hover { color: var(--theme-orange); }
     font-size: 1.1rem; color: var(--text-light); max-width: 600px; margin: 0 auto; line-height: 1.6;
 }
 
-/* 白色內容容器 (統一設定，解決 padding 衝突) */
 .content-body {
     background-color: #fff; max-width: 1000px; margin: 0 auto 60px; padding: 50px;
     border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); line-height: 1.8; position: relative;
@@ -367,7 +366,7 @@ blockquote p { margin: 0; }
 
 
 /* ========================================= */
-/* 6. 美食指南頁 (Food Page)                */
+/* 6. 美食指南頁 (Food Page)                 */
 /* ========================================= */
 .food-card {
     display: flex !important; /* 強制橫向 */
@@ -395,7 +394,7 @@ blockquote p { margin: 0; }
 
 
 /* ========================================= */
-/* 7. 天氣與其他 (Weather Page & Utils)      */
+/* 7. 天氣預報頁 (Weather Page)              */
 /* ========================================= */
 .weather-embed-container {
     border-radius: var(--radius-md); overflow: hidden;
@@ -413,7 +412,7 @@ blockquote p { margin: 0; }
 
 
 /* ========================================= */
-/* 8. RWD 響應式設定 (Media Queries)          */
+/* 9. RWD 響應式設定 (Media Queries)          */
 /* ========================================= */
 
 /* 筆電與平板 (小於 1200px) */
